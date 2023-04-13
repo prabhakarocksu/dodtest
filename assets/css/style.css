@@ -1,4 +1,4 @@
-﻿/**
+/**
  ==================================================
  * Name: Mark Educate - University, College and School Education
  * Version: 1.0
@@ -835,12 +835,12 @@ a:focus, a:hover {
 	top: 0;
 	left: 100%;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) { */
 	.mainmenu li ul.sub-menu, .mainmenu ul li ul.sub-menu li ul.sub-menu {
 		-webkit-transition: all 0.3s ease-out;
 		transition: all 0.3s ease-out;
 	}
-}
+/* } */
 .mainmenu ul li ul.sub-menu li {
 	padding: 0;
 	width: 100%;
@@ -852,12 +852,14 @@ a:focus, a:hover {
 	filter: alpha(opacity=100);
 	z-index: 999;
 	visibility: visible;
+	display: block;
 }
 
 .mainmenu ul.nav > li ul li:hover ul.sub-menu {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	visibility: visible;
+	display: block;
 }
 
 .mainmenu ul li ul.sub-menu li a {
@@ -884,6 +886,9 @@ a:focus, a:hover {
 		visibility: visible;
 		display: none;
 	}
+	.menu-bg .mainmenu .navbar-nav li a:hover {
+	color: #fff;
+}
 }
 @media only screen and (min-width: 768px) {
 	.mainmenu li ul.mega-menu {
